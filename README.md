@@ -1,70 +1,54 @@
-### Prerequisites
+LifeLink – Organ Management Platform
+Overview
 
-- NPM and Node.js installed
-- MongoDB cluster created and added to the system's environment variable
+LifeLink is a web-based platform designed to streamline organ availability tracking and requests between procurement centres, transplant centres, and hospitals.
+Instead of relying on manual methods like phone calls, faxes, or scattered spreadsheets, LifeLink enables real-time viewing of available organs and their details, ensuring faster decision-making when time is critical.
 
-### Installing
+Prerequisites
 
-Steps for Installing NPM modules on both client and server folders
+Node.js and npm installed
 
-Execute these commands from the project directory
+A running MongoDB cluster, with its connection string stored in your system’s environment variables
 
-```
-cd client && npm install
-```
+Installation
 
-```
-cd server && npm install
-```
+From the project’s root directory, install dependencies for both the client and server:
 
-### Running the app
+cd client
+npm install
 
-Open a terminal on server directory
+cd ../server
+npm install
 
-```
-npm start:dev
-```
+Running the Application
 
-and open another terminal on client directory
-```
+Start the backend
+From the server directory:
+
+npm run start:dev
+
+
+Start the frontend
+From the client directory:
+
 npm start
-```
 
 
-### Access the web app on your system at http://localhost:3000/
+Open the app in your browser at:
+http://localhost:3000/
 
-<hr>
+Key Features
 
-### Screenshots
+Displays real-time organ availability from multiple procurement and transplant centres in one dashboard.
 
-<p align="center">
-  <img src="./Screenshots/1.jpeg" alt="image"/>
-</p>
+Search and filter organs by attributes such as blood group or organ type.
 
-<p align="center">
-  <img src="./Screenshots/2.jpeg" alt="image"/>
-</p>
+Hospitals can request organs directly through the portal.
 
-<p align="center">
-  <img src="./Screenshots/3.jpeg" alt="image"/>
-</p>
+Integrated payment flow to confirm requests.
 
-<p align="center">
-  <img src="./Screenshots/4.jpeg" alt="image"/>
-</p>
+Procurement centres can approve or decline requests online.
 
-<p align="center">
-  <img src="./Screenshots/5.jpeg" alt="image"/>
-</p>
+Why LifeLink?
 
-<p align="center">
-  <img src="./Screenshots/6.jpeg" alt="image"/>
-</p>
-
-<hr>
-
-As organs are needed ASAP for operations, time is the most crucial aspect. However, the existing method to request organs from procurement centre/ transplant centres is completely manual (manual data entry, manual communication via faxes, mails, phone calls) and thus is obviously error prone and time consuming. Therefore to solve this grave issue, 'OrganEase' is proposed. 
-
-The website makes the tedious manual task of categorizing different organs and making entries for each, mere clicks away. In a particular region, say n number of procurement centres and/or transplant centres exist. All of them can display the organs stored in their hypothermic storages along with their details at one time (this completely solvesthe time-consuming problem of individually calling of procurement centres one by one which is done presently). 
-
-Hospitals can request organs of suitable compatibility (Blood Group, etc) via the portal itself and make a payment which serves as a token of confirmation for the transfer procedure. Thereafter, the procurement centre has the option to confirm the request from their side.
+Organ transplants are highly time-sensitive, and delays in communication can mean the loss of a viable organ. LifeLink removes bottlenecks by providing a single platform for all participating centres, reducing manual work, errors, and delays.
